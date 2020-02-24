@@ -1,0 +1,66 @@
+<html>
+<body>
+
+	
+	<div>
+
+<h2>Facebook-Lite Register User</h2>
+<div>
+<form action="../server/register.php" method="POST" >
+
+Email: <input type="text" name="email" id="email" pattern="\s*(\S\s*){6,}" title="Email should have at least 6 characters." required="" />
+<br/><br/>
+
+
+
+Fullname: <input type="text" name="fullname" id="fullname" pattern="\s*(\S\s*){3,}" title="Name should have at least 3 characters." required="" />
+<br/><br/>
+
+Screen Name: <input type="text" name="screenname" id="screenname" pattern="\s*(\S\s*){3,}" title="Screen name should have at least 3 characters." required="" />
+<br/><br/>
+
+
+
+
+DOB: <input type="date" name="dateofbirth" id="dateofbirth">
+<br/>
+
+Gender: <select type="text" name="gender" id="gender">
+	<option value="F">Female</option>
+	<option selected="selected" value="F">Female</option>
+	</select>
+	<br/>
+
+Status: <select type="text" name="status" id="status">
+<option selected="selected" value="Single">Single</option>
+<option value="Married">Married</option>
+</select>
+<br/>
+
+Password: <input type="password" name="password" id="password" minlength="6"  required title="6 characters minimum">
+<br/>
+Location: <select type="text" name="location" id="location">
+<option selected="selected" value="USA">USA</option>
+<option value="China">China</option>
+<option value="IR">Iran</option>
+</select>
+<br/>
+
+Visibility-Level: <select  type="text" name="visibility" id="visibility">
+<option value="friends-only">Friends-Only</option>
+<option value="private">Private</option>
+<option selected="selected" value="public">Everyone</option>
+</select>
+<br/>
+
+<div>
+<a style="padding-right: 50px;" href="./login.html" > Already a member? </a>
+<button  type="submit" >Sign Up!</button>
+</div>
+</form>
+</div>
+</body>
+
+
+</html>
+
