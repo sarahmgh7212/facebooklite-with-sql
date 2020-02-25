@@ -4,10 +4,10 @@ if(!isset($_SESSION['login'])){
   header('Location: login.html');
 }
 			// establish a database connection to your Oracle database.
-$username = 's3667123';
-$password = 'P@ssw0rd';
-$servername = 'talsprddb01.int.its.rmit.edu.au';
-$servicename = 'CSAMPR1.ITS.RMIT.EDU.AU';
+$username = 'username';
+$password = 'password';
+$servername = 'servername';
+$servicename = 'servicename';
 $connection = $servername."/".$servicename;          
 $conn = oci_connect($username, $password, $connection);
 $memberuid = $_SESSION["memberuid"];
